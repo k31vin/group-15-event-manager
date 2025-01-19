@@ -1,0 +1,132 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+form {
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 35px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Input Fields Styling */
+input,
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+input:focus,
+button:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.4);
+}
+
+input[type="email"],
+input[type="password"] {
+  background-color: #f6f6f6;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.separator {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+
+.social-login {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  
+}
+
+.social-login a img {
+  width: 50px; /* Very small size */
+  height: auto;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.social-login a img:hover {
+  transform: scale(1.2); /* Scale up slightly */
+  opacity: 0.8; /* Slightly reduce opacity for hover effect */
+}
+
+/* Forgot password link style */
+.forgot-password {
+  font-size: 14px;
+  color: #3498db;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Register link style */
+.register-link {
+  font-size: 14px;
+  text-align: center;
+  color: #777;
+}
+
+.register-link a {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
